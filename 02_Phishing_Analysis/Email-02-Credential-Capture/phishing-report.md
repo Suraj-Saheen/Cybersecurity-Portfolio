@@ -52,7 +52,7 @@ This url is claiming to be of "royalmail.com" which is a legitimate main service
 
 Impact Level
 ======================================
-High- This phishing email is impersonates a trusted bank(CIBC) and attempts to collect credentials. Users clicking the link may have their account compromised, leading to potential financial loss.
+High- This phishing email impersonates a trusted bank(CIBC) and attempts to collect credentials. Users clicking the link may have their account compromised, leading to potential financial loss.
 
 
 Verdict

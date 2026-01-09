@@ -58,7 +58,7 @@ But the second part of the URL- hxxps[://]drop-coin-availablenow[.]site44[.]com/
 
 Impact Level
 ======================================
-High- This phishing email is impersonates a trusted crypto wallet platform "trustwallet.com" and attempts to collect credentials. Users clicking the link may have their account compromised, leading to potential financial loss.
+High- This phishing email impersonates a trusted crypto wallet platform "trustwallet.com" and attempts to collect credentials. Users clicking the link may have their account compromised, leading to potential financial loss.
 
 
 Verdict
