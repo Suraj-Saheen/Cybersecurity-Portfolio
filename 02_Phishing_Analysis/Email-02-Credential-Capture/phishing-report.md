@@ -20,7 +20,7 @@ Message-ID: <i7g9MMh5NtErtaOzQZEp3D-i-u3FWwdo0wY5mhD8Q1vIvv1yeLj-jMWPAn-HP3FugKs
 
 URLs
 ======================================
-hxxp[://]app[.]e[.]royalmail[.]com/e/es?sE1761973&e2011&elqTrackIdxD8A052C380BCBFF284D754BEBE9730&elq)631e61f5464684a81212b3091d9419&elqaidI4&elqat=1
+hxxp[://]app[.]e[.]royalmail[.]com/e/es?s=451761973&e=102011&elqTrackId=78D8A052C380BCBFF284D754BEBE9730&elq=29631e61f5464684a81212b3091d9419&elqaid=494&elqat=1
 
 
 Attachments
@@ -45,7 +45,7 @@ The sender and bounce domains used like CIBC-Banking.Service.Email.8@caib.com, m
 Both the domains are likely the attacker-controlled mailbox, intended to collect responses or credentials. Further investigation is recommended.
 
 **URL Analysis:**
-The "Activate my account" button redirects to the URL- hxxp[://]app[.]e[.]royalmail[.]com/e/es?sE1761973&e2011&elqTrackIdxD8A052C380BCBFF284D754BEBE9730&elq)631e61f5464684a81212b3091d9419&elqaidI4&elqat=1
+The "Activate my account" button redirects to the URL- hxxp[://]app[.]e[.]royalmail[.]com/e/es?s=451761973&e=102011&elqTrackId=78D8A052C380BCBFF284D754BEBE9730&elq=29631e61f5464684a81212b3091d9419&elqaid=494&elqat=1
 
 This url is claiming to be of "royalmail.com" which is a legitimate main service used by banks and governments but due to the failed cryptographic  authentication , the url cannot be trusted and needs further investigation. VirusTotal and other similar tools show the url to be clean(no sure).
 
@@ -68,5 +68,5 @@ Defense Actions
 
 -Report to email provider and the associated bank
 
--check and do a password reset of the user if credentials are compromised.
+-Check for compromised account info of the user and contact the bank immediately.
 
