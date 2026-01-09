@@ -1,29 +1,21 @@
 Headers
 ======================================
 Date: Tue, 1 Aug 2023 21:22:47 +0000
+
 Subject: Microsoft account unusual signin activity September 16, 2022 #[636274168]
 To: phishing@pot
+
 From: Microsoft account team ,_<no-reply@access-accsecurity.com>
 
 Reply-To: solutionteamrecognizd03@gmail.com
+
 Return-Path:bounce@providentusezn.co.uk
 
 Sender IP: 89.144.44.4
-Originating Mail Server: Headers
-======================================
-Date: Tue, 1 Aug 2023 21:22:47 +0000
-Subject: Microsoft account unusual signin activity September 16, 2022 #[636274168]
-To: phishing@pot
-From: Microsoft account team ,_<no-reply@access-accsecurity.com>
 
-Reply-To: solutionteamrecognizd03@gmail.com
-Return-Path:bounce@providentusezn.co.uk
-
-Sender IP: 89.144.44.4
 Originating Mail Server: providentusezn.co.uk
 
 Message-ID: <191ad2cb-9324-4167-9e8b-30a60c49d341@DB3EUR04FT008.eop-eur04.prod.protection.outlook.com>
-
 
 URLs
 ======================================
@@ -65,6 +57,8 @@ The email is not legitimate, fails all authentication checks , and impersonating
 Defense Actions
 ======================================
 -Block Sending Domain and domains associated with the emails.
+
 -Enforce DMARC = reject
+
 -Report to email provider
 
