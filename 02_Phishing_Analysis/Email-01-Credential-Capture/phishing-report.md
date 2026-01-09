@@ -48,6 +48,10 @@ The "view activity" button redirects to the URL- hxxps[://]mc4-two[.]vercel[.]ap
 VirusTotal flagged the URL as phishing (screenshot provided in the 'screenshot' directory).The target brand identified is "Microsoft" which is true in our case.
 
 
+Impact Level
+======================================
+High- This phishing email impersonates a trusted brand(Microsoft) and attempts to collect credentials. Users clicking the link may have their account compromised, leading to potential private data leak, even financial loss.
+
 
 Verdict
 ======================================
