@@ -58,7 +58,7 @@ High- This phishing email impersonates a trusted bank(CIBC) and attempts to coll
 Verdict
 ======================================
 **Potential Phishing Email**
-The email is not legitimate, fails all authentication checks , and impersonating a trusted bank(CIBC). A clear indication of domainspoofing and impersonation is detected. Further investigation and checks must be done to see for other users that got similar emails.
+The email is not legitimate, fails all authentication checks , and impersonating a trusted bank(CIBC). A clear indication of domain spoofing and impersonation is detected. Further investigation and checks must be done to see for other users that got similar emails.
 
 Defense Actions
 ======================================

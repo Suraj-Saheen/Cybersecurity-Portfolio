@@ -64,7 +64,7 @@ High- This phishing email impersonates a trusted crypto wallet platform "trustwa
 Verdict
 ======================================
 **Confirmed Phishing Email**
-The email is not legitimate,impersonating "trustwallet.com". A clear indication of domainspoofing and impersonation of legitimate service and platform is detected. Further investigation and checks must be done to see for other users that got similar emails.
+The email is not legitimate,impersonating "trustwallet.com". A clear indication of domain spoofing and impersonation of legitimate service and platform is detected. Further investigation and checks must be done to see for other users that got similar emails.
 
 Defense Actions
 ======================================
