@@ -134,30 +134,20 @@ A successful RDP login was detected after multiple failed attempts from an inter
 Full report available at: incident-reports/brute-force-report.md
 
 **Investigation Highlights: **
-
--Identified attacker source IP
-
--Confirmed targeted account
-
--Correlated failed and successful logons
-
--Detected post-compromise activity using Sysmon
-
--Assessed risk and recommended mitigations
+- Identified attacker source IP
+- Confirmed targeted account
+- Correlated failed and successful logons
+- Detected post-compromise activity using Sysmon
+- Assessed risk and recommended mitigations
 
 
 **Evidence Collected: **
 
--Windows Security Logs (4624, 4625)
-
--Sysmon Logs (Event IDs 1 and 3)
-
--Process execution details
-
--Network connection telemetry
-
--Hash values for suspicious executables
-
+- Windows Security Logs (4624, 4625)
+- Sysmon Logs (Event IDs 1 and 3)
+- Process execution details
+- Network connection telemetry
+- Hash values for suspicious executables
 
 Sample logs available in: logs-samples/sample-sysmon-events.json ; logs-samples/sample-winodws-security-application-system-logs.json
 
@@ -165,45 +155,31 @@ Sample logs available in: logs-samples/sample-sysmon-events.json ; logs-samples/
 #Tools & Technologies Used
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
--Splunk Enterprise (Free)
-
--Sysmon (Sysinternals)
-
--Kali Linux
-
--Hydra
-
--Windows Event Logging
-
--PowerShell
-
--Git & GitHub
+- Splunk Enterprise (Free)
+- Sysmon (Sysinternals)
+- Kali Linux
+- Hydra
+- Windows Event Logging
+- PowerShell
+- Git & GitHub
 
 #Skills Demonstrated
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
--SOC alert creation and tuning
-
--Log analysis and correlation
-
--Incident investigation & reporting
-
--Windows endpoint monitoring
-
--MITRE ATT&CK-aligned attack detection
-
--SIEM usage (Splunk)
-
--Security documentation
+- SOC alert creation and tuning
+- Log analysis and correlation
+- Incident investigation & reporting
+- Windows endpoint monitoring
+- MITRE ATT&CK-aligned attack detection
+- SIEM usage (Splunk)
+- Security documentation
 
 #Future Improvements
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
--Integrate MITRE ATT&CK mappings
-
--Automate log parsing with Splunk props/transforms
-
--Add additional attack scenarios (C2 beaconing, persistence)
+- Integrate MITRE ATT&CK mappings
+- Automate log parsing with Splunk props/transforms
+- Add additional attack scenarios (C2 beaconing, persistence)
 
 
 #Author
