@@ -1,4 +1,4 @@
-#***Mini SOC Lab – Attack Detection & Incident Response***
+#*Mini SOC Lab – Attack Detection & Incident Response*
 
 #Overview
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -82,6 +82,10 @@ Severity: High
 
 File: Splunk-Alerts/brute-force-alert.txt
 
+
+
+
+
 ###Alert 2: Suspicious PowerShell Encoded Command
 
 Description: Detects encoded PowerShell execution.
@@ -94,6 +98,9 @@ index=sysmon "<EventID>1</EventID>" "powershell.exe" "-enc"
 Severity: Medium
 
 File: Splunk-Alerts/suspecious-powershell-alert.txt
+
+
+
 
 ###Alert 3: Unknown Outbound Network Connection
 
@@ -117,6 +124,7 @@ Severity: Medium
 
 File: Splunk-Alerts/unknown-outbound-connection-alert.txt
 
+
 #Incident Investigation
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -128,18 +136,28 @@ Full report available at: incident-reports/brute-force-report.md
 **Investigation Highlights: **
 
 -Identified attacker source IP
+
 -Confirmed targeted account
+
 -Correlated failed and successful logons
+
 -Detected post-compromise activity using Sysmon
+
 -Assessed risk and recommended mitigations
+
 
 **Evidence Collected: **
 
 -Windows Security Logs (4624, 4625)
+
 -Sysmon Logs (Event IDs 1 and 3)
+
 -Process execution details
+
 -Network connection telemetry
+
 -Hash values for suspicious executables
+
 
 Sample logs available in: logs-samples/sample-sysmon-events.json ; logs-samples/sample-winodws-security-application-system-logs.json
 
@@ -148,30 +166,45 @@ Sample logs available in: logs-samples/sample-sysmon-events.json ; logs-samples/
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 -Splunk Enterprise (Free)
+
 -Sysmon (Sysinternals)
+
 -Kali Linux
+
 -Hydra
+
 -Windows Event Logging
+
 -PowerShell
+
 -Git & GitHub
 
 #Skills Demonstrated
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 -SOC alert creation and tuning
+
 -Log analysis and correlation
+
 -Incident investigation & reporting
+
 -Windows endpoint monitoring
+
 -MITRE ATT&CK-aligned attack detection
+
 -SIEM usage (Splunk)
+
 -Security documentation
 
 #Future Improvements
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 -Integrate MITRE ATT&CK mappings
+
 -Automate log parsing with Splunk props/transforms
+
 -Add additional attack scenarios (C2 beaconing, persistence)
+
 
 #Author
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
