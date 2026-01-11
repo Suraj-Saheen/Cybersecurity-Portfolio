@@ -20,27 +20,26 @@ On January 11, 2026, the SOC detected multiple failed Remote Desktop Protocol (R
 
 #2. Timeline of Events
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    Time (UTC)   	    |  Event Type	     |  Source IP	|   Target Account         | Host Workstation  |  EventID   |         Notes
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  
-2026-01-11 19:47:45.999	| Failed RDP login	 | 192.168.19.4	|  Suraj(Administrator)    | 192.168.19.20	   |  4625	    |  First failed login detected
-2026-01-11 19:47:45.999	| Failed RDP login	 | 192.168.19.4 |  Suraj(Administrator)    | 192.168.19.20	   |  4625	    |     Second failed login
-2026-01-11 19:47:46.021	| Failed RDP login	 | 192.168.19.4	|  Suraj(Administrator)    | 192.168.19.20	   |  4625	    |     Third failed login
-2026-01-11 19:47:48.326	| Success RDP login	 | 192.168.19.4	|  Suraj(Administrator)    | 192.168.19.20	   |  4624	    |     Successful login
-2026-01-11 19:47:48.326 | SOC Alert Triggered|	N/A	        |      N/A	               |       N/A	       |   N/A	    | Alert triggered after multiple failed attempts
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+|       Time (UTC)           |       Event Type        |       Source IP    |       Target Account      | Host Workstation   |  Event ID  |                 Notes                |
+|:--------------------------:|:-----------------------:|:------------------:|:-------------------------:|:------------------:|:----------:|:------------------------------------:|
+| 2026-01-11 19:47:45.999    | Failed RDP login        | 192.168.19.4       | Suraj (Administrator)     | 192.168.19.20      | 4625       | First failed login detected          |
+| 2026-01-11 19:47:45.999    | Failed RDP login        | 192.168.19.4       | Suraj (Administrator)     | 192.168.19.20      | 4625       | Second failed login                  |
+| 2026-01-11 19:47:46.021    | Failed RDP login        | 192.168.19.4       | Suraj (Administrator)     | 192.168.19.20      | 4625       | Third failed login                   |
+| 2026-01-11 19:47:48.326    | Successful RDP login    | 192.168.19.4       | Suraj (Administrator)     | 192.168.19.20      | 4624       | Successful login                     |
+| 2026-01-11 19:47:48.326    | SOC Alert Triggered     | N/A                | N/A                       | N/A                | N/A        | Alert triggered after failures       |
 
 Note: Additional failed attempts may have occurred; full log review recommended.
 
 #3. Indicators of Compromise (IoCs)
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
---------------------------------------------------------------------------------------
-   Type	   |    Indicator	        |    Description
---------------------------------------------------------------------------------------
-Source IP  |  192.168.19.4	        | Origin of brute-force attempts
-Account	   |  Suraj(Administrator)  | Targeted account
-Target Host|  192.168.19.20	        | Host being attacked
---------------------------------------------------------------------------------------
+
+| Type          |         Indicator        |            Description                |
+|:-------------:|:------------------------:|:-------------------------------------:|
+| Source IP     | 192.168.19.4             | Origin of brute-force attempts        |
+| Account       | Suraj (Administrator)    | Targeted account                      |
+| Target Host   | 192.168.19.20            | Host being attacked                   |
+
 
 
 #4. Impact Assessment
