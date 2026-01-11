@@ -1,16 +1,16 @@
-#Mini SOC Lab – Attack Detection & Incident Response
+#***Mini SOC Lab – Attack Detection & Incident Response***
 
-##Overview
-
+#Overview
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 This project simulates a **real-world Security Operations Center (SOC)** environment to demonstrate hands-on experience with **log collection, threat detection, alerting, and incident response**.
 
 The lab recreates common attacker techniques such as **RDP brute-force attacks, malicious PowerShell execution, and suspicious process creation**, while leveraging **Sysmon and Splunk** for detection and investigation.
 
 This project is designed to mirror **Tier 1 / Tier 2 SOC analyst workflows**.
 
----
 
-##Lab Components
+#Lab Components
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 - **Windows 10 VM** – Victim / Target Machine
 
@@ -20,10 +20,9 @@ This project is designed to mirror **Tier 1 / Tier 2 SOC analyst workflows**.
 
 - **Splunk Enterprise (Free)** – Log ingestion, detection, and analysis
 
----
 
 #Architecture Flow
- 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
         Kali Linux (Attacker)
                |
                |RDP / Network Traffic
@@ -118,78 +117,64 @@ Severity: Medium
 
 File: Splunk-Alerts/unknown-outbound-connection-alert.txt
 
-🕵️ Incident Investigation
-📄 Incident: RDP Brute Force Attack
+#Incident Investigation
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+**Incident:** RDP Brute Force Attack
 A successful RDP login was detected after multiple failed attempts from an internal IP, indicating potential lateral movement or compromised internal host.
 
-📁 Full report available at:
-incident-reports/brute-force-report.md
+Full report available at: incident-reports/brute-force-report.md
 
-Investigation Highlights
-Identified attacker source IP
+**Investigation Highlights: **
 
-Confirmed targeted account
+-Identified attacker source IP
+-Confirmed targeted account
+-Correlated failed and successful logons
+-Detected post-compromise activity using Sysmon
+-Assessed risk and recommended mitigations
 
-Correlated failed and successful logons
+**Evidence Collected: **
 
-Detected post-compromise activity using Sysmon
+-Windows Security Logs (4624, 4625)
+-Sysmon Logs (Event IDs 1 and 3)
+-Process execution details
+-Network connection telemetry
+-Hash values for suspicious executables
 
-Assessed risk and recommended mitigations
+Sample logs available in: logs-samples/sample-sysmon-events.json ; logs-samples/sample-winodws-security-application-system-logs.json
 
-🧾 Evidence Collected
-Windows Security Logs (4624, 4625)
 
-Sysmon Logs (Event IDs 1 and 3)
+#Tools & Technologies Used
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Process execution details
+-Splunk Enterprise (Free)
+-Sysmon (Sysinternals)
+-Kali Linux
+-Hydra
+-Windows Event Logging
+-PowerShell
+-Git & GitHub
 
-Network connection telemetry
+#Skills Demonstrated
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Hash values for suspicious executables
+-SOC alert creation and tuning
+-Log analysis and correlation
+-Incident investigation & reporting
+-Windows endpoint monitoring
+-MITRE ATT&CK-aligned attack detection
+-SIEM usage (Splunk)
+-Security documentation
 
-Sample logs available in:
-logs-samples/sample-sysmon-events.json
+#Future Improvements
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-🛠️ Tools & Technologies Used
-Splunk Enterprise (Free)
+-Integrate MITRE ATT&CK mappings
+-Automate log parsing with Splunk props/transforms
+-Add additional attack scenarios (C2 beaconing, persistence)
 
-Sysmon (Sysinternals)
-
-Kali Linux
-
-Hydra
-
-Windows Event Logging
-
-PowerShell
-
-Git & GitHub
-
-📈 Skills Demonstrated
-SOC alert creation and tuning
-
-Log analysis and correlation
-
-Incident investigation & reporting
-
-Windows endpoint monitoring
-
-MITRE ATT&CK-aligned attack detection
-
-SIEM usage (Splunk)
-
-Security documentation
-
-📌 Future Improvements
-Add Sigma rule equivalents
-
-Integrate MITRE ATT&CK mappings
-
-Automate log parsing with Splunk props/transforms
-
-Add additional attack scenarios (C2 beaconing, persistence)
-
-📬 Author
+#Author
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Suraj Saheen
 Cybersecurity | SOC Analyst (Aspiring)
 GitHub: https://github.com/Suraj-Saheen
