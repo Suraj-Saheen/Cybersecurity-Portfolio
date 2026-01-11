@@ -46,6 +46,7 @@ This project is designed to mirror **Tier 1 / Tier 2 SOC analyst workflows**.
 - Logs Generated:
   - Windows Security Event ID **4625** (Failed Logon)
   - Windows Security Event ID **4624** (Successful Logon)
+---
 
 ### 2️⃣ Malicious PowerShell Execution
 
@@ -54,7 +55,7 @@ This project is designed to mirror **Tier 1 / Tier 2 SOC analyst workflows**.
 - Detection:
   - Sysmon Event ID **1** (Process Creation)
   - Suspicious use of `-EncodedCommand`
-
+---
 ### 3️⃣ Suspicious Executable Execution
 
 - Created fake malware:
