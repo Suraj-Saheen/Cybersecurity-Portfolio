@@ -1,16 +1,16 @@
 #Mini SOC Lab – Attack Detection & Incident Response
 
-#Overview
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+##Overview
+
 This project simulates a **real-world Security Operations Center (SOC)** environment to demonstrate hands-on experience with **log collection, threat detection, alerting, and incident response**.
 
 The lab recreates common attacker techniques such as **RDP brute-force attacks, malicious PowerShell execution, and suspicious process creation**, while leveraging **Sysmon and Splunk** for detection and investigation.
 
 This project is designed to mirror **Tier 1 / Tier 2 SOC analyst workflows**.
 
+---
 
-#Lab Components
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+##Lab Components
 
 - **Windows 10 VM** – Victim / Target Machine
 
@@ -20,9 +20,10 @@ This project is designed to mirror **Tier 1 / Tier 2 SOC analyst workflows**.
 
 - **Splunk Enterprise (Free)** – Log ingestion, detection, and analysis
 
+---
 
 #Architecture Flow
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+ 
         Kali Linux (Attacker)
                |
                |RDP / Network Traffic
