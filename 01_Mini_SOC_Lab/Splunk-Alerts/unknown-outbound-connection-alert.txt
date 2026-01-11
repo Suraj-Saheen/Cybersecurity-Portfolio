@@ -1,0 +1,10 @@
+index=sysmon
+"<EventID>3</EventID>"
+NOT (
+  "<Data Name=\'DestinationIp\'>10."
+  OR "<Data Name=\'DestinationIp\'>192.168."
+  OR "<Data Name=\"DestinationIp\">172.17."
+  OR "<Data Name=\"DestinationIp\">172.18."
+  OR "<Data Name=\"DestinationIp\">172.19."
+  OR "<Data Name=\"DestinationIp\">172.2"
+)
