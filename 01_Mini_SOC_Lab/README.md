@@ -1,6 +1,6 @@
-### 🛡️ Mini SOC Lab – Attack Detection & Incident Response
+#Mini SOC Lab – Attack Detection & Incident Response
 
-#Overview
+##Overview
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 This project simulates a **real-world Security Operations Center (SOC)** environment to demonstrate hands-on experience with **log collection, threat detection, alerting, and incident response**.
 
@@ -9,7 +9,7 @@ The lab recreates common attacker techniques such as **RDP brute-force attacks, 
 This project is designed to mirror **Tier 1 / Tier 2 SOC analyst workflows**.
 
 
-#Lab Components
+##Lab Components
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 - **Windows 10 VM** – Victim / Target Machine
@@ -21,7 +21,7 @@ This project is designed to mirror **Tier 1 / Tier 2 SOC analyst workflows**.
 - **Splunk Enterprise (Free)** – Log ingestion, detection, and analysis
 
 
-#Architecture Flow
+##Architecture Flow
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
         Kali Linux (Attacker)
                |
@@ -35,7 +35,7 @@ This project is designed to mirror **Tier 1 / Tier 2 SOC analyst workflows**.
 
 
 
-# ⚔️ Attack Scenarios Simulated
+#Attack Scenarios Simulated
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ### 1️⃣ RDP Brute-Force Attack
@@ -72,28 +72,25 @@ evil.exe
 **Description:** Detects multiple failed RDP login attempts from a single source.
 
 **SPL Query:**
-```
-index=security EventCode=4625
-| stats count by Account_Name, Source_Network_Address
-| where count > 5 ```
+```spl
+index=security EventCode=4625| stats count by Account_Name, Source_Network_Address| where count > 5 ```
 
 Trigger: More than 5 failed attempts in 5 minutes
 
 Severity: High
 
-File: splunk-alerts/brute-force-alert.txt
+File: Splunk-Alerts/brute-force-alert.txt
 
-### Alert 2: Suspicious PowerShell Encoded Command
+###Alert 2: Suspicious PowerShell Encoded Command
 Description: Detects encoded PowerShell execution.
 
 SPL Query:
 
-spl
-Copy code
+
 index=sysmon EventCode=1 Image="*powershell.exe" CommandLine="*-enc*"
 Severity: Medium
 
-File: splunk-alerts/powershell-alert.txt
+File: Splunk-Alerts/powershell-alert.txt
 
 🔔 Alert 3: Unknown Outbound Network Connection
 Description: Detects outbound connections to non-internal IPs.
