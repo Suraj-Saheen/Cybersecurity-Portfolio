@@ -1,4 +1,0 @@
-index=sysmon
-"<EventID>1</EventID>"
-"powershell.exe"
-"-enc"
