@@ -186,8 +186,12 @@ Sample logs available in: logs-samples/sample-sysmon-events.json ; logs-samples/
 
 #Author
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Suraj Saheen
+**Name:** Suraj Saheen 
 
-Cybersecurity | SOC Analyst (Aspiring)
+**Role:** Cybersecurity | SOC Analyst (Aspiring)
 
-GitHub: https://github.com/Suraj-Saheen
+**Email:** surajsaheen@gmail.com
+
+**GitHub:** https://github.com/Suraj-Saheen
+
+**LinkedIn:** https://www.linkedin.com/in/suraj-saheen-a0912a394
