@@ -70,14 +70,13 @@ These playbooks align with the phases defined in **NIST SP 800-61**:
 ```
 
 ## Escalation Matrix
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-| Severity  |                  Description                     | Escalation Level            |
-|:-------- :|:------------------------------------------------:|:---------------------------:|
-| Low      | Single user affected, no confirmed impact        | Tier 1 SOC                  |
-| Medium   | Multiple users or systems impacted               | Tier 2 SOC                  |
-| High     | Privileged access, malware spread, or ransomware | Tier 3 / IR Team            |
-| Critical | Business-wide impact or data breach              | CISO / Executive Management |
+| Severity  | Description                                     | Escalation Level           |
+|:--------:|:-----------------------------------------------|:-------------------------:|
+| Low      | Single user affected, no confirmed impact      | Tier 1 SOC                |
+| Medium   | Multiple users or systems impacted             | Tier 2 SOC                |
+| High     | Privileged access, malware spread, or ransomware | Tier 3 / IR Team         |
+| Critical | Business-wide impact or data breach            | CISO / Executive Management |
 
 
 ## Frameworks Used
