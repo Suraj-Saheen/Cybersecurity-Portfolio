@@ -46,32 +46,33 @@ These playbooks align with the phases defined in **NIST SP 800-61**:
 ## Incident Response Flowchart
 
 ```text
-[ Alert / User Report ]
-           |
-           v
-[ Detection & Analysis ]
-           |
-           v
-[ Triage & Severity Assessment ]
-           |
-     +-----+-----+
-     |           |
-     v           v
-[ Low / Medium ] [ High / Critical ]
-     |           |
-     v           v
-[ Containment ] [ Escalation to IR Team ]
-     |           |
-     v           v
-[ Recovery ]   [ Executive Notification ]
-     |
-     v
-[ Lessons Learned ]
+                                 [ Alert / User Report ]
+                                         |
+                                         v
+                                [ Detection & Analysis ]
+                                         |
+                                         v
+                            [ Triage & Severity Assessment ]
+                                         |
+                           +-------------+-------------------+
+                           |                                 |
+                           v                                 v
+                    [ Low / Medium ]                [ High / Critical ]
+                           |                                 |
+                           v                                 v
+                    [ Containment ]               [ Escalation to IR Team ]
+                           |                                 |
+                           v                                 v
+                     [ Recovery ]                [ Executive Notification ]
+                           |
+                           v
+                  [ Lessons Learned ]
 ```
 
 ## Escalation Matrix
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-| Severity | Description                                      | Escalation Level            |
+| Severity  |                  Description                     | Escalation Level            |
 |:-------- :|:------------------------------------------------:|:---------------------------:|
 | Low      | Single user affected, no confirmed impact        | Tier 1 SOC                  |
 | Medium   | Multiple users or systems impacted               | Tier 2 SOC                  |
@@ -83,14 +84,18 @@ These playbooks align with the phases defined in **NIST SP 800-61**:
 - NIST SP 800-61 - Computer Security Incident Handling Guide
 - MITRE ATT&CK - Adversary Tactics, Techniques, and Procedures
 
----
+
 
 ## Author
 
 **Name:** Suraj Saheen 
+
 **Role:** Cybersecurity | SOC Analyst (Aspiring)
+
 **Email:** surajsaheen@gmail.com
+
 **GitHub:** https://github.com/Suraj-Saheen
+
 **LinkedIn:** https://www.linkedin.com/in/suraj-saheen-a0912a394
 
 This repository was created to demonstrate practical SOC operational knowledge, structured incident response methodologies, and alignment with industry standards such as **NIST SP 800-61** and **MITRE ATT&CK**.
