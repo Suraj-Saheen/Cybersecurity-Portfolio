@@ -1,7 +1,7 @@
 # Incident Response Playbooks
 
 ## Overview
-This repository contains incident response playbooks designed to demonstrate **Security Operations Center (SOC) operational readiness**. The playbooks align with the **NIST Incident Response Lifecycle (SP 800-61)** and the **MITRE ATT&CK framework**, providing structured, repeatable response procedures for common enterprise security incidents.
+This project contains incident response playbooks designed to demonstrate **Security Operations Center (SOC) operational readiness**. The playbooks align with the **NIST Incident Response Lifecycle (SP 800-61)** and the **MITRE ATT&CK framework**, providing structured, repeatable response procedures for common enterprise security incidents.
 
 ## Included Playbooks
 - **Phishing Incident Response Playbook**
